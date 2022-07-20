@@ -66,7 +66,7 @@ if __name__ == "__main__":
     x = data[:,0]
     y = data[:,1]
     poly_x = np.linspace(-6, 6, num = 1000)
-    figure = plt.scatter(x, y, c = 'k')
+    figure = plt.scatter(x, y, c = 'k', label = 'Data')
     for n in paramFits:
         polyY = [np.polyval(n, i) for i in poly_x]
         r2Y = [np.polyval(n, i) for i in x]
